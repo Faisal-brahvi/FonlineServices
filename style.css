@@ -1,0 +1,219 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* LOGO IMAGE F*/
+.LOGO img{
+    height: 80px;
+}
+
+/*Navigation Bar */
+.navbar{
+    position: absolute;    
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    display: flex;
+}
+.navbar ul{
+    display: flex;
+}
+ul li{
+    
+    list-style: none;
+}
+ul li a{
+    color: white;
+    margin: 3px 10px;
+    text-decoration: none;
+    background-color: red;
+    display: block;
+    padding: 3px 9px;
+    border-radius: 6px;
+}
+ul li a:hover{
+    color: red;
+    background-color: white;
+}
+/*Search bar */
+.searchbar{ 
+}
+/*Home main Picture*/
+.home{
+    display: flex;
+    flex-direction: column;
+    height: 413px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+.home::before{
+    content: "";
+    background: url("HomeBackground/food1.jpg")no-repeat center center/cover;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    left:0px;
+    top: 0px;
+    height: 419px;
+    opacity: 0.89;
+    z-index: -1;
+}
+/* welcome to online food Services */
+#h-primary{
+    margin-top: 80px;
+    color: white;
+    font-size: 2.1rem;
+}
+.Text{
+    font-size: 1.0rem;
+    margin-bottom: 23px;
+    color: white;
+}
+/* order now Button */
+.btn{
+    margin-top: 30px;
+    padding: 5px;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 6px 6px 10px red;
+}
+.btn:hover{
+    background: red;
+    color: white;
+    box-shadow: 6px 6px 6px white;
+    border: 2px solid white;
+}
+
+/* OUr Services Sections */
+
+/*Services-Items */ 
+.services{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.services .container .box{
+    flex-grow: 1;
+    border-radius: 23px;
+    border: 2px solid black;
+    margin:25px 6px;
+    flex-wrap: wrap;
+    width: 250px;
+    padding: 5px;
+    text-align: center;
+    background:lightsteelblue;
+}
+
+.container{ 
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;  
+}
+/* images in our services*/
+.container img{
+    height: 120px;
+    margin: 3px 0px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/*Services Clients*/
+.section-client{
+    position:relative;
+}
+.section-client::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url('HomeBackground/food2.jpg')no-repeat center center/cover;
+    position: absolute;
+    opacity: 0.3;
+    z-index: -1;
+}
+.services-clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-client{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container-client #box{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#box img{
+    height: 50px;
+    padding: 34px;
+    text-align: center;
+}
+
+/*Contact us */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url("ContactUs/contact2.jpg")no-repeat center center/cover;
+    
+}
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contactbox input,
+#contactbox textarea{
+    width: 100%;
+    padding:0.5rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+#contactbox form{
+    width: 40%;
+}
+#contactbox label{
+    font-size: 1.3rem;
+    color: white;
+}
+/*Footer section*/
+footer{
+    background: black;
+    color: white;
+    padding: 10px 20px;
+}
+/* utility classes */
+div .Text{
+  
+}
+.h-primary{
+   font-size: 2.9rem;
+}
+#h-secondary{
+    color:blue;
+    z-index: 1; 
+}
+#parainourservices{
+    color:navy;
+}
+.center{
+    text-align: center;   
+}
